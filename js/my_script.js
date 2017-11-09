@@ -1,4 +1,4 @@
 $(document).ready(function() {
-    $("h2").addClass("underline");
-    $("ul").addClass("border");
+    $("tr:odd").addClass("oddtablerows");
+    $("tr:even").addClass("eventablerows");
 });
