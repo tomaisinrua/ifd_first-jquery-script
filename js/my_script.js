@@ -1,4 +1,6 @@
 $(document).ready(function() {
-    $("tr:odd").addClass("oddtablerows");
-    $("tr:even").addClass("eventablerows");
+    $("th").click(function() {
+        $("tr").children().removeClass("selection")
+        $(this).siblings().addClass("selection");
+    });
 });
